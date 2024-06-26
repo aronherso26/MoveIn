@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<head>
+	
+
+
+	<link rel ="stylesheet" href="style.css" />
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<!-- preloader -->
+	<div id="preloader">
+        <img src="./assets/Logo_img.png" alt="MoveIn Logo">
+    </div>
+	<div class="bodyWrapper">
+		<div class="banner">
+			<div class='bannerImg'>
+				<img src="assets/Logo_img.png" />
+			</div>
+			<div class="bannerMenu">
+				<div class="menuItem">Buy</div>
+				<div class="menuItem">Rent</div>
+				<div class="menuItem">Off Plan</div>
+				<!-- <div class="menuItem">Data Hub</div> -->
+				<!-- <div class="menuItem">Commercial</div> -->
+				<div class="menuItem">Careers</div>
+				<div class="menuItem">Explore More</div>
+			</div>
+			<div class="listBtn">List your property</div>
+			<div class="userMenu">
+				<img src="assets/user.png" />
+			</div>
+		</div>
+		<div class="mainContentWrapper">
+			<!-- <div class="ContentBg"><img src="assets/mainBg.jpg" /></div> -->
+			<div class="mainWrapHead">Find your property</div>
+			<div class="propertyTypeDiv">
+				<div class="checkBoxMenu checkBoxMenuSelected">Residential</div>
+				<div class="checkBoxMenu">Commercial</div>
+				<div class="checkBoxMenu">Off Plan</div>
+			</div>
+			<div class="searchBoxDiv">
+				<div class="buyMenu">
+					Buy
+				</div>
+				<div class="searchItem">Community or Building</div>
+				<div class="searchItem"><span class="unsupportedChar" >|</span> &nbsp; Price, Type and Bedrooms <span class="unsupportedChar" > * </span></div>
+				<div class="searchImgDiv">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" class="w-6 h-6">
+					  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+					</svg>
+				</div>
+			</div>
+			<div class="contactDiv">
+				<div class="contactDivDesc">
+					Prices are always changing, <br> find out the value of your property today.
+				</div>
+				<div class="contactBtn">Contact us</div>
+			</div>
+			<div class="list-wrapper">
+			<div class="carouselLeft" onclick= 'moveCarousel("previous")'><h1>&#8249;</h1></div>
+				<ul class="list">
+					<li class="item">
+						<div class="mainCarouselDiv">
+							<div class="mainCarouselImg"><img src="assets/carousel_Img1.jpg" /></div>
+							<div class="carouselDesc">
+								<div class="carouselText">The Dubai property market report for Q1 2025 is now <br> Live<span class="unsupportedChar" >!</span> </div>
+								<div class="checkBoxMenu">Read Now</div>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="mainCarouselDiv">
+							<div class="mainCarouselImg"><img src="./assets/CENTRAL-PARK06.jpg" /></div>
+							<div class="carouselDesc">
+								<div class="carouselText">Dubai<span class="unsupportedChar" >'</span>s real estate sales transactions increased by over 27<span class="unsupportedChar" >%</span> in February 2025,  </div>
+								<div class="checkBoxMenu">Read Now</div>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="mainCarouselDiv">
+							<div class="mainCarouselImg"><img src="assets/LaMerPool.jpg" /></div>
+							<div class="carouselDesc">
+								<div class="carouselText">Dubai<span class="unsupportedChar" >'</span>s real estate sales transactions increased by over 27<span class="unsupportedChar" >%</span> in February 2025,  </div>
+								<div class="checkBoxMenu">Read Now</div>
+							</div>
+						</div>
+					</li>
+				</ul>		
+			<div class="carouselRight" onclick= 'moveCarousel("next")'><h1>&#8250;</h1></div>
+			</div>
+		</div>
+		<div class="weeklyNewWrapper">
+			<div class="weeklyNewHead">New this week</div>
+			<div class="propertyTypeDiv">
+				<div class="checkBoxMenu checkBoxMenuSelBlue">For Sale</div>
+				<div class="checkBoxMenu">For Rent</div>
+				<div class="checkBoxMenu">Off Plan</div>
+			</div>
+			<div class="weeklyCarouselWrapper">
+				<div class="weeklyCarouselWrap"> 
+					<div class="weeklyCarouselLeft" onclick='weeklyClick("previous")'><h1>&#8249;</h1></div>
+					<ul class="weeklyList">
+						<li class="weeklyItem">
+						<div class="weeklyCarouselDiv">
+							<div class="weeklyCarouselImg"><img src="assets/cinemaRoom.jpg" /></div>
+							<div class="weeklyCarouselDesc">
+								<div class="weeklyCarouselTextHead">One Bed <span class="unsupportedChar" >| </span> Vacant on Transfer <span class="unsupportedChar" >| </span> Furnished</div>
+								<div class="weeklyCarouselAddr">Creek Edge, Dubai Creek Harbor <br><span class="unsupportedChar" >(</span> The Lagoons<span class="unsupportedChar" >)</span></div>
+								<div class="weeklyCarouselImgDiv">
+									<div class="specificImgs"><img src="assets/bed.png" /></div>
+									<div>2</div>
+									<div class="textGrey unsupportedChar">  </div>
+									<div class="specificImgs"><img src="assets/bathtub.png" /></div>
+									<div>5</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/area.png" /></div>
+									<div> 5,207sq.ft</div>
+								</div>
+								<div class="weeklyCarouselCost">AED 2,999,990</div>
+							</div>
+						</div>
+						<div class="weeklyCarouselDiv">
+							<div class="weeklyCarouselImg"><img src="assets/MasterBathroom.jpg" /></div>
+							<div class="weeklyCarouselDesc">
+								<div class="weeklyCarouselTextHead">Vacant Now <span class="unsupportedChar" >| </span> One Bedroom <span class="unsupportedChar" >| </span> Sea View</div>
+								<div class="weeklyCarouselAddr">Creek Edge, Dubai Creek Harbor <br><span class="unsupportedChar" >(</span> The Lagoons<span class="unsupportedChar" >)</span></div>
+								<div class="weeklyCarouselImgDiv">
+									<div class="specificImgs"><img src="assets/bed.png" /></div>
+									<div>2</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/bathtub.png" /> </div>
+									<div>5</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/area.png" /> </div>
+									<div>5,207sq.ft</div>
+								</div>
+								<div class="weeklyCarouselCost">AED 3,999,990</div>
+							</div>
+						</div>
+						<div class="weeklyCarouselDiv">
+							<div class="weeklyCarouselImg"><img src="assets/MasterCloset.jpg" /></div>
+							<div class="weeklyCarouselDesc">
+								<div class="weeklyCarouselTextHead">Fully Upgraded <span class="unsupportedChar" >| </span> Furnished Vacant</div>
+								<div class="weeklyCarouselAddr">Creek Edge, Dubai Creek Harbor <br><span class="unsupportedChar" >(</span> The Lagoons<span class="unsupportedChar" >)</span></div>
+								<div class="weeklyCarouselImgDiv">
+									<div class="specificImgs"><img src="assets/bed.png" /> </div>
+									<div>2</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/bathtub.png" /></div>
+									<div>5</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/area.png" /></div>
+									<div>5,207sq.ft</div>
+								</div>
+								<div class="weeklyCarouselCost">AED 5,999,990</div>
+							</div>
+						</div>
+						<div class="weeklyCarouselDiv">
+							<div class="weeklyCarouselImg"><img src="assets/LaMerPool.jpg" /></div>
+							<div class="weeklyCarouselDesc">
+								<div class="weeklyCarouselTextHead">One Bed <span class="unsupportedChar" >| </span> Rare Unit <span class="unsupportedChar" >| </span> Courtyard <span class="unsupportedChar" >| </span> Pool View</div>
+								<div class="weeklyCarouselAddr">Creek Edge, Dubai Creek Harbor <br><span class="unsupportedChar" >(</span> The Lagoons<span class="unsupportedChar" >)</span></div>
+								<div class="weeklyCarouselImgDiv">
+									<div class="specificImgs"><img src="assets/bed.png" /></div>
+									<div>2</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/bathtub.png" /></div>
+									<div>5</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/area.png" /></div>
+									<div>5,207sq.ft</div>
+								</div>
+								<div class="weeklyCarouselCost">AED 2,999,990</div>
+							</div>
+						</div>
+						</li>
+						<li class="weeklyItem">
+						<div class="weeklyCarouselDiv">
+							<div class="weeklyCarouselImg"><img src="assets/MasterBathroom.jpg" /></div>
+							<div class="weeklyCarouselDesc">
+								<div class="weeklyCarouselTextHead">Vacant Now <span class="unsupportedChar" >| </span> One Bedroom <span class="unsupportedChar" >| </span> Sea View</div>
+								<div class="weeklyCarouselAddr">Creek Edge, Dubai Creek Harbor <br><span class="unsupportedChar" >(</span> The Lagoons<span class="unsupportedChar" >)</span></div>
+								<div class="weeklyCarouselImgDiv">
+									<div class="specificImgs"><img src="assets/bed.png" /></div>
+									<div>2</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/bathtub.png" /> </div>
+									<div>5</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/area.png" /> </div>
+									<div>5,207sq.ft</div>
+								</div>
+								<div class="weeklyCarouselCost">AED 3,999,990</div>
+							</div>
+						</div>
+						<div class="weeklyCarouselDiv">
+							<div class="weeklyCarouselImg"><img src="assets/MasterCloset.jpg" /></div>
+							<div class="weeklyCarouselDesc">
+								<div class="weeklyCarouselTextHead">Fully Upgraded <span class="unsupportedChar" >| </span> Furnished Vacant</div>
+								<div class="weeklyCarouselAddr">Creek Edge, Dubai Creek Harbor <br><span class="unsupportedChar" >(</span> The Lagoons<span class="unsupportedChar" >)</span></div>
+								<div class="weeklyCarouselImgDiv">
+									<div class="specificImgs"><img src="assets/bed.png" /> </div>
+									<div>2</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/bathtub.png" /></div>
+									<div>5</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/area.png" /></div>
+									<div>5,207sq.ft</div>
+								</div>
+								<div class="weeklyCarouselCost">AED 5,999,990</div>
+							</div>
+						</div>
+						<div class="weeklyCarouselDiv">
+							<div class="weeklyCarouselImg"><img src="assets/cinemaRoom.jpg" /></div>
+							<div class="weeklyCarouselDesc">
+								<div class="weeklyCarouselTextHead">One Bed <span class="unsupportedChar" >| </span> Vacant on Transfer <span class="unsupportedChar" >| </span> Furnished</div>
+								<div class="weeklyCarouselAddr">Creek Edge, Dubai Creek Harbor <br><span class="unsupportedChar" >(</span> The Lagoons<span class="unsupportedChar" >)</span></div>
+								<div class="weeklyCarouselImgDiv">
+									<div class="specificImgs"><img src="assets/bed.png" /></div>
+									<div>2</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/bathtub.png" /></div>
+									<div>5</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/area.png" /></div>
+									<div> 5,207sq.ft</div>
+								</div>
+								<div class="weeklyCarouselCost">AED 2,999,990</div>
+							</div>
+						</div>
+						<div class="weeklyCarouselDiv">
+							<div class="weeklyCarouselImg" style="height: 9em;"><img src="assets/LaMerPool.jpg" /></div>
+							<div class="weeklyCarouselDesc">
+								<div class="weeklyCarouselTextHead">One Bed <span class="unsupportedChar" >| </span> Rare Unit <span class="unsupportedChar" >| </span> Courtyard <span class="unsupportedChar" >| </span> Pool View</div>
+								<div class="weeklyCarouselAddr">Creek Edge, Dubai Creek Harbor <br><span class="unsupportedChar" >(</span> The Lagoons<span class="unsupportedChar" >)</span></div>
+								<div class="weeklyCarouselImgDiv">
+									<div class="specificImgs"><img src="assets/bed.png" /></div>
+									<div>2</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/bathtub.png" /></div>
+									<div>5</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/area.png" /></div>
+									<div>5,207sq.ft</div>
+								</div>
+								<div class="weeklyCarouselCost">AED 2,999,990</div>
+							</div>
+						</div>
+						</li>
+						<li class="weeklyItem">
+						<div class="weeklyCarouselDiv">
+							<div class="weeklyCarouselImg"><img src="assets/MasterCloset.jpg" /></div>
+							<div class="weeklyCarouselDesc">
+								<div class="weeklyCarouselTextHead">Fully Upgraded <span class="unsupportedChar" >| </span> Furnished Vacant</div>
+								<div class="weeklyCarouselAddr">Creek Edge, Dubai Creek Harbor <br><span class="unsupportedChar" >(</span> The Lagoons<span class="unsupportedChar" >)</span></div>
+								<div class="weeklyCarouselImgDiv">
+									<div class="specificImgs"><img src="assets/bed.png" /> </div>
+									<div>2</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/bathtub.png" /></div>
+									<div>5</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/area.png" /></div>
+									<div>5,207sq.ft</div>
+								</div>
+								<div class="weeklyCarouselCost">AED 5,999,990</div>
+							</div>
+						</div>
+						<div class="weeklyCarouselDiv">
+							<div class="weeklyCarouselImg"><img src="assets/MasterBathroom.jpg" /></div>
+							<div class="weeklyCarouselDesc">
+								<div class="weeklyCarouselTextHead">Vacant Now <span class="unsupportedChar" >| </span> One Bedroom <span class="unsupportedChar" >| </span> Sea View</div>
+								<div class="weeklyCarouselAddr">Creek Edge, Dubai Creek Harbor <br><span class="unsupportedChar" >(</span> The Lagoons<span class="unsupportedChar" >)</span></div>
+								<div class="weeklyCarouselImgDiv">
+									<div class="specificImgs"><img src="assets/bed.png" /></div>
+									<div>2</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/bathtub.png" /> </div>
+									<div>5</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/area.png" /> </div>
+									<div>5,207sq.ft</div>
+								</div>
+								<div class="weeklyCarouselCost">AED 3,999,990</div>
+							</div>
+						</div>
+						<div class="weeklyCarouselDiv">
+							<div class="weeklyCarouselImg"><img src="assets/cinemaRoom.jpg" /></div>
+							<div class="weeklyCarouselDesc">
+								<div class="weeklyCarouselTextHead">One Bed <span class="unsupportedChar" >| </span> Vacant on Transfer <span class="unsupportedChar" >| </span> Furnished</div>
+								<div class="weeklyCarouselAddr">Creek Edge, Dubai Creek Harbor <br><span class="unsupportedChar" >(</span> The Lagoons<span class="unsupportedChar" >)</span></div>
+								<div class="weeklyCarouselImgDiv">
+									<div class="specificImgs"><img src="assets/bed.png" /></div>
+									<div>2</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/bathtub.png" /></div>
+									<div>5</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/area.png" /></div>
+									<div> 5,207sq.ft</div>
+								</div>
+								<div class="weeklyCarouselCost">AED 2,999,990</div>
+							</div>
+						</div>
+						<div class="weeklyCarouselDiv">
+							<div class="weeklyCarouselImg" style="height: 9em;"><img src="assets/LaMerPool.jpg" /></div>
+							<div class="weeklyCarouselDesc">
+								<div class="weeklyCarouselTextHead">One Bed <span class="unsupportedChar" >| </span> Rare Unit <span class="unsupportedChar" >| </span> Courtyard <span class="unsupportedChar" >| </span> Pool View</div>
+								<div class="weeklyCarouselAddr">Creek Edge, Dubai Creek Harbor <br><span class="unsupportedChar" >(</span> The Lagoons<span class="unsupportedChar" >)</span></div>
+								<div class="weeklyCarouselImgDiv">
+									<div class="specificImgs"><img src="assets/bed.png" /></div>
+									<div>2</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/bathtub.png" /></div>
+									<div>5</div>
+									<div class="textGrey unsupportedChar"> | </div>
+									<div class="specificImgs"><img src="assets/area.png" /></div>
+									<div>5,207sq.ft</div>
+								</div>
+								<div class="weeklyCarouselCost">AED 2,999,990</div>
+							</div>
+						</div>
+						</li>
+					</ul>	
+					<div class="weeklyCarouselRight" onclick='weeklyClick("next")' ><h1>&#8250;</h1></div>
+				</div>
+			</div>	
+		</div><br><br><br>
+		<div class="formWrapper">
+			<div class="formDiv"> 
+				<div class="formHead">Book a property valuation</div>
+				<div class="formDesc">We have a waitlist of clients ready to view properties, extensive comparable community data and a trusted reputation. Just three of the reason why people choose us.</div>
+				<div class="formInputWrapper">
+					<div class="formInputDiv">
+						<input type="text" class="formInputText" placeholder="Full Name " />
+						<input type="text" class="formInputText" placeholder="Email Address " />
+						<input type="text" class="formInputText" placeholder="Mobile " />
+						<input type="text" class="formInputText" placeholder="Listing Type " />
+						<input type="text" class="formInputText" placeholder="Property Address " />
+						<div class="listBtn">Submit Details</div>
+						<div class="formTermsNPri">By clicking Submit, You agree to our Terms <span class="unsupportedChar" > & </span> Privacy Policy.</div>
+					</div>
+					<div class="formGirlImg"><img src="assets/formImg.jpg" /></div>
+				</div>
+			</div>
+		</div><br><br><br>
+		<div class="latestWrapper">
+			<div class="latestHead">Latest News <span class="unsupportedChar" >& </span> Videos</div><br><br>
+			<div class="latestContentWrapper">
+				<div class="latestContentMain">
+					<div class="latestContentMainImgDiv">
+						<img src="assets/CENTRAL-PARK11.jpg" />
+					</div><br>
+					<div class="latestContentMainDesc">Dubai financial market sees a 171 percent surge in profits in Q1 2025 </div>
+					<div class="latestContentMainImgs">
+						<div class="iconSvg">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+							  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+							</svg>
+						</div>
+						<div>08<span class="unsupportedChar" >-</span>05<span class="unsupportedChar" >-</span>2025</div>
+						<div class="unsupportedChar">|</div>
+						<div class="iconSvg">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+							  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+							</svg>
+						</div>
+						<div>5 min</div>
+					</div>
+				</div>
+				<div class="latestContentSubDiv">
+					<div class="latestContentSub">
+						<div class="latestContentSubImgDiv">
+							<img src="assets/CENTRAL-PARK01.jpg" />
+						</div>
+						<div class="latestContentSubText">
+							<div class="latestContentSubDesc">Dubai financial market sees a 171 percent surge in profits in Q1 2025</div>
+							<div class="latestContentMainImgs">
+								<div class="iconSvg">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+									  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+									</svg>
+								</div>
+								<div>08<span class="unsupportedChar" >-</span>05<span class="unsupportedChar" >-</span>2025</div>
+								<div class="unsupportedChar" >|</div>
+								<div class="iconSvg">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+									  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+									</svg>
+								</div>
+								<div>5 min</div>
+							</div>
+						</div>	
+					</div>
+					<div class="latestContentSub">
+						<div class="latestContentSubImgDiv">
+							<img src="assets/CENTRAL-PARK04.jpg" />
+						</div>
+						<div class="latestContentSubText">
+							<div class="latestContentSubDesc">Dubai financial market sees a 171 percent surge in profits in Q1 2025</div>
+							<div class="latestContentMainImgs">
+								<div class="iconSvg">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+									  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+									</svg>
+								</div>
+								<div>08<span class="unsupportedChar" >-</span>05<span class="unsupportedChar" >-</span>2025</div>
+								<div class="unsupportedChar" >|</div>
+								<div class="iconSvg">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+									  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+									</svg>
+								</div>
+								<div>5 min</div>
+							</div>
+						</div>	
+					</div>
+					<div class="latestContentSub">
+						<div class="latestContentSubImgDiv">
+							<img src="assets/CENTRAL-PARK06.jpg" />
+						</div>
+						<div class="latestContentSubText">
+							<div class="latestContentSubDesc">Dubai financial market sees a 171 percent surge in profits in Q1 2025</div>
+							<div class="latestContentMainImgs">
+								<div class="iconSvg">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+									  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+									</svg>
+								</div>
+								<div>08<span class="unsupportedChar" >-</span>05<span class="unsupportedChar" >-</span>2025</div>
+								<div class="unsupportedChar" >|</div>
+								<div class="iconSvg">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+									  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+									</svg>
+								</div>
+								<div>5 min</div>
+							</div>
+						</div>	
+					</div>
+					<div class="latestContentSub">
+						<div class="latestContentSubImgDiv">
+							<img src="assets/CENTRAL-PARK10.jpg" />
+						</div>
+						<div class="latestContentSubText">
+							<div class="latestContentSubDesc">Dubai financial market sees a 171 percent surge in profits in Q1 2025</div>
+							<div class="latestContentMainImgs">
+								<div class="iconSvg">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+									  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+									</svg>
+								</div>
+								<div>08<span class="unsupportedChar" >-</span>05<span class="unsupportedChar" >-</span>2025</div>
+								<div class="unsupportedChar" >|</div>
+								<div class="iconSvg">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+									  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+									</svg>
+								</div>
+								<div>5 min</div>
+							</div>
+						</div>	
+					</div>
+					
+					
+				</div>
+			</div>
+			<div class="listBtn">View all news <span class="unsupportedChar" >& </span>Video</div>
+		</div><br><br><br><br>
+		<div class="cardWrapper">
+			<div class="cardList1">
+				<div class="cardHeader">Stay updated</div>
+				<div class="cardicon"><img src="./assets/email.png"></div>
+				<div class="cardDesc">Be in the know of everything real estate today</div>
+				<div class="cardBtn">Yes, Please</div>
+			</div>
+			<div class="cardList2">
+				<div class="cardHeader">Get in touch</div>
+				<div class="cardicon"><img src="./assets/hand-graving-smartphone.png"></div>
+				<div class="cardDesc">We are here to answer all of your questions with a range of experts across the board. Between us, there is nothing we can<span class="unsupportedChar" >'</span>t help you with<span class="unsupportedChar" >!</span></div>
+				<div class="cardBtn">Contact us</div>
+			</div>
+			<div class="cardList3">
+				<div class="cardHeader">Leadership</div>
+				<div class="cardicon"><img src="./assets/leadership.png"></div>
+				<div class="cardDesc">Our management team has over 100 years of experience combined in Dubai<span class="unsupportedChar" >'</span>s property market.</div>
+				<div class="cardBtn">Our people</div>
+			</div>
+		</div><br><br><br>
+		<div class="footNotesWrpper">
+			<div class="footNotesDiv">
+				<div class="footerLeft">
+					<div >
+						Terms <span class="unsupportedChar" >&</span> condition <span class="unsupportedChar" >|</span> Privacy <span class="unsupportedChar" >&</span> Cookies Copyright <span class="unsupportedChar" >©</span> Move On
+					</div>
+					<div class="footerSmImg">	
+						<div class="smImg"><img src="assets/whatsapp.png" /></div>
+						<div class="smImg"><img src="assets/facebook.png" /></div>
+						<div class="smImg"><img src="assets/instagram.png" /></div>
+						<div class="smImg"><img src="assets/twitter.png" /></div>
+					</div>
+					<div class="footerSubs">
+						Subscribe to Out Newsletter
+					</div>
+					<div></div>
+				</div>
+				<div class="footerRight">
+					<div class="footInfoGroup">
+						<div class="fooInfoHead">About</div>
+						<div class="fooInfoList">Our Story</div>
+						<div class="fooInfoList">Our Team</div>
+						<div class="fooInfoList">News</div>
+						<div class="fooInfoList">Blog</div>
+					</div>
+					<div class="footInfoGroup">
+						<div class="fooInfoHead">Spaces</div>
+						<div class="fooInfoList">Small Team</div>
+						<div class="fooInfoList">Medium Team</div>
+						<div class="fooInfoList">Large Teams</div>
+						<div class="fooInfoList">Corporate</div>
+					</div>
+					<div class="footInfoGroup">
+						<div class="fooInfoHead">Location</div>
+						<div class="fooInfoList">New York</div>
+						<div class="fooInfoList">India</div>
+						<div class="fooInfoList">Los<span class="unsupportedChar" >-</span>Angeles</div>
+						<div class="fooInfoList">San Fransisco</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div>aronherso<span class="unsupportedChar" >@</span>gmail.com</div>
+				<div class="footerAdd">Move In is a company registered in Dubai, United Arab Emirates <span class="unsupportedChar" >(</span>License No 8753288<span class="unsupportedChar" >) </span> 26th floor, Vision tower, Business bay, Dubai. <br> We are regulated by the real estate regulatory agency under office number 1815</div>
+			</div>
+		</div>
+		
+	</div>
+		
+</body>
+<html>
